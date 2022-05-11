@@ -14,7 +14,7 @@ function App() {
       <MenuModal />
       <MissionsModal />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

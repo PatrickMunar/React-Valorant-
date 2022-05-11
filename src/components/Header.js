@@ -2,14 +2,14 @@ import MenuButton from './MenuButton'
 import MiddleNavDiv from './MiddleNavDiv'
 import gsap from 'gsap'
 
-const Header = (props) => {
+const Header = () => {
   const enterMissionsNav = () => {
-    gsap.to('.sideLine', {ease: 'Power1.easeOut',duration: 0.2, opacity: 0.5})
+    gsap.to('.sideLine', {ease: 'Power1.easeOut',duration: 0, opacity: 0.5})
     gsap.to('.missionsModal', {ease: 'Power1.easeOut',duration: 0, opacity: 1, zIndex: 50})
   }
 
   const leaveMissionsNav = () => {
-    gsap.to('.sideLine', {ease: 'Power1.easeIn',duration: 0.2, opacity: 0})
+    gsap.to('.sideLine', {ease: 'Power1.easeIn',duration: 0, opacity: 0})
       gsap.to('.missionsModal', {ease: 'Power1.easeOut',duration: 0, opacity: 0, zIndex: -50})
   }
 
